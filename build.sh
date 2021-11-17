@@ -1,0 +1,1 @@
+docker build -f ./Dockerfile --tag ssmay0/simple-container .
