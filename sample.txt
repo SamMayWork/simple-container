@@ -1,0 +1,4 @@
+Do not include this critical information in the Dockerfile!!!!!
+
+User Name: SSE123
+Password: 1234
