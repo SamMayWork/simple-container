@@ -6,7 +6,7 @@ const app = express()
 app.get('/', async (req, res) => {
   console.log(`Got request for ${req.baseUrl}`)
 
-  const response = await fetch('https://gist.githubusercontent.com/The5heepDev/a15539b297a7862af4f12ce07fee6bb7/raw/7164813a9b8d0a3b2dcffd5b80005f1967887475/entire_bee_movie_script')
+  const response = await fetch('https://gist.githubusercontent.com/pdmyrs/c40729a61c6446a36bb3fad6a163e986/raw/6b25895fce480713560829dec31ac8220ffe5272/gists.txt')
   const content = await response.text()
 
   res.send(content)
