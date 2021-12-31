@@ -3,7 +3,7 @@ const fetch = require('node-fetch')
 
 //#region Nasty Platform Specific code
 
-if (process.platform === 'linux') {
+if (process.platform === 'darwin') {
   throw new Exception('Some application specific problem has occured! Nasty!')
 }
 
