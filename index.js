@@ -1,6 +1,14 @@
 const express = require('express')
 const fetch = require('node-fetch')
 
+//#region Nasty Platform Specific code
+
+if (process.platform === 'linux') {
+  throw new Exception('Some application specific problem has occured! Nasty!')
+}
+
+//#endregion
+
 const app = express()
 
 app.get('/', async (req, res) => {
